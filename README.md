@@ -112,7 +112,9 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###79.	Word Search	
 ###80.	Remove Duplicates from Sorted Array II
 ###81.	Search in Rotated Sorted Array II
-###82.	Remove Duplicates from Sorted List II
+###82.	Remove Duplicates from Sorted List II `finish`
+>	* Two pointers
+
 ###83.	Remove Duplicates from Sorted List
 ###84.	Largest Rectangle in Histogram
 ###85.	Maximal Rectangle	
@@ -178,7 +180,10 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 >	* one addition space in array make it more readable.  
 
 ###140. Word Break II	
-###141. Linked List Cycle	
+###141. Linked List Cycle	`finish`
+>	* use two pointers, fast one jump by two elemnts, slow one jump by one element.
+>	* deal with "null" pointers
+
 ###142. Linked List Cycle II	
 ###143. Reorder List	
 ###144. Binary Tree Preorder Traversal
