@@ -115,7 +115,9 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###82.	Remove Duplicates from Sorted List II `finish`
 >	* Two pointers
 
-###83.	Remove Duplicates from Sorted List
+###83.	Remove Duplicates from Sorted List `finish`
+>	* Two pointers  
+
 ###84.	Largest Rectangle in Histogram
 ###85.	Maximal Rectangle	
 ###86.	Partition List	
