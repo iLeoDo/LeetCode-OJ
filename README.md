@@ -150,6 +150,11 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###107. Binary Tree Level Order Traversal II
 ###108. Convert Sorted Array to Binary Search Tree
 ###109. Convert Sorted List to Binary Search Tree
+>	* count the length of linked list firstly
+>	* do not access the list randomly
+>	* so use inorder traverse.
+>	* use a holder datastructure(e.g. ArrayList) to keep the current node to insert
+
 ###110. Balanced Binary Tree	
 ###111. Minimum Depth of Binary Tree
 ###112. Path Sum	
