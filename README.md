@@ -37,7 +37,9 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###16.	3Sum Closest	
 ###17.	Letter Combinations of a Phone Number
 ###18.	4Sum	
-###19.	Remove Nth Node From End of List
+###19.	Remove Nth Node From End of List `finish`
+>	* create a gap between two pointers, which distance is `n`.
+>	* careful with the situation that remove the first node in the list.
 ###20.	Valid Parentheses	
 ###21.	Merge Two Sorted Lists	
 ###22.	Generate Parentheses	
