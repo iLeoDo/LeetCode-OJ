@@ -32,7 +32,10 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###11.	Container With Most Water
 ###12.	Integer to Roman	
 ###13.	Roman to Integer	
-###14.	Longest Common Prefix	
+###14.	Longest Common Prefix	`finish`
+>	* compare String one by one.
+>	* for the method who return String, normally return "" (empty String) when edge case.
+
 ###15.	3Sum	
 ###16.	3Sum Closest	
 ###17.	Letter Combinations of a Phone Number
