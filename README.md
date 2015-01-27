@@ -142,19 +142,22 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###99. Recover Binary Search Tree
 ###100. Same Tree	
 ###101. Symmetric Tree	
-###102. Binary Tree Level Order Traversal
+###102. Binary Tree Level Order Traversal `finish`
 >	* BFS 
 
 ###103. Binary Tree Zigzag Level Order Traversal
 ###104. Maximum Depth of Binary Tree
 ###105. Construct Binary Tree from Preorder and Inorder Traversal
 ###106. Construct Binary Tree from Inorder and Postorder Traversal
-###107. Binary Tree Level Order Traversal II
+###107. Binary Tree Level Order Traversal II `finish`
 >	* BFS 
 >	* LinkedList addFirst();  
 
-###108. Convert Sorted Array to Binary Search Tree
-###109. Convert Sorted List to Binary Search Tree
+###108. Convert Sorted Array to Binary Search Tree `finish`
+>	* recursive
+>	* careful with the situation array is null or has only one element.
+
+###109. Convert Sorted List to Binary Search Tree `finish`
 >	* count the length of linked list firstly
 >	* do not access the list randomly
 >	* so use inorder traverse.
@@ -200,10 +203,10 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 
 ###142. Linked List Cycle II	
 ###143. Reorder List	
-###144. Binary Tree Preorder Traversal
+###144. Binary Tree Preorder Traversal `finish`
 >	* make use of stack and queue when traverse the tree    
 
-###145. Binary Tree Postorder Traversal
+###145. Binary Tree Postorder Traversal `finish`
 >	* track the number of access of each nodes
 >	* when 2nd time, push right node into stack
 >	* when 3rd time, add current Node to list.
