@@ -199,6 +199,10 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 >	* make use of stack and queue when traverse the tree    
 
 ###145. Binary Tree Postorder Traversal
+>	* track the number of access of each nodes
+>	* when 2nd time, push right node into stack
+>	* when 3rd time, add current Node to list.
+
 ###146. LRU Cache	
 ###147. Insertion Sort List	
 ###148. Sort List	
