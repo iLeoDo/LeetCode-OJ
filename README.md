@@ -66,7 +66,12 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###40.	Combination Sum II	
 ###41.	First Missing Positive	
 ###42.	Trapping Rain Water	
-###43.	Multiply Strings	
+###43.	Multiply Strings	`finish`
+>	* calculate the result by digits
+>	* outter loop track the digits and track the carry
+>	* inner loop calculate the sum for one digits  
+>	* care about leading '0';  
+
 ###44.	Wildcard Matching	
 ###45.	Jump Game II	
 ###46.	Permutations	
