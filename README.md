@@ -143,11 +143,16 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###100. Same Tree	
 ###101. Symmetric Tree	
 ###102. Binary Tree Level Order Traversal
+>	* BFS 
+
 ###103. Binary Tree Zigzag Level Order Traversal
 ###104. Maximum Depth of Binary Tree
 ###105. Construct Binary Tree from Preorder and Inorder Traversal
 ###106. Construct Binary Tree from Inorder and Postorder Traversal
 ###107. Binary Tree Level Order Traversal II
+>	* BFS 
+>	* LinkedList addFirst();  
+
 ###108. Convert Sorted Array to Binary Search Tree
 ###109. Convert Sorted List to Binary Search Tree
 >	* count the length of linked list firstly
