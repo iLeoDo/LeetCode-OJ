@@ -196,6 +196,8 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###142. Linked List Cycle II	
 ###143. Reorder List	
 ###144. Binary Tree Preorder Traversal
+>	* make use of stack and queue when traverse the tree    
+
 ###145. Binary Tree Postorder Traversal
 ###146. LRU Cache	
 ###147. Insertion Sort List	
