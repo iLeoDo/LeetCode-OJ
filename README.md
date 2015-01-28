@@ -106,6 +106,8 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###65.	Valid Number	
 ###66.	Plus One	
 ###67.	Add Binary	
+>	* use helper method to get target digit of a String
+
 ###68.	Text Justification	
 ###69.	Sqrt(x) `finish`
 >	* Apply the thinking of binary search  
