@@ -105,7 +105,7 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###64.	Minimum Path Sum	
 ###65.	Valid Number	
 ###66.	Plus One	
-###67.	Add Binary	
+###67.	Add Binary `finish`	
 >	* use helper method to get target digit of a String
 
 ###68.	Text Justification	
@@ -226,7 +226,10 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###148. Sort List	
 ###149. Max Points on a Line	
 ###150. Evaluate Reverse Polish Notation
-###151. Reverse Words in a String
+###151. Reverse Words in a String `finish`
+>	* finish in one pass
+>	* two StringBuilder, one for current word, the other for final result
+
 ###152. Maximum Product Subarray	
 ###153. Find Minimum in Rotated Sorted Array
 ###154. Find Minimum in Rotated Sorted Array II
