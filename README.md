@@ -60,7 +60,10 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###30.	Substring with Concatenation of All Words
 ###31.	Next Permutation	
 ###32.	Longest Valid Parentheses
-###33.	Search in Rotated Sorted Array
+###33.	Search in Rotated Sorted Array `finish`
+>	* Based on binary search
+>	* each time, detect which side is sorted (there is at least one part is sorted)  
+
 ###34.	Search for a Range	｀finish｀
 >	* a helper method that use binary search to find first element which greater or equal to target
 >	* use `target` and `target+1` to get the two bounds 
