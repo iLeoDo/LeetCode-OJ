@@ -108,7 +108,9 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###63.	Unique Paths II	
 ###64.	Minimum Path Sum	
 ###65.	Valid Number	
-###66.	Plus One	
+###66.	Plus One	 `finish`
+>	*   start from the rightest digit, if `digits[i]==9` change it to 0, when finding one element is not 9, return.
+
 ###67.	Add Binary `finish`	
 >	* use helper method to get target digit of a String
 
