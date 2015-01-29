@@ -64,11 +64,13 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 >	* Based on binary search
 >	* each time, detect which side is sorted (there is at least one part is sorted)  
 
-###34.	Search for a Range	｀finish｀
+###34.	Search for a Range	`finish`
 >	* a helper method that use binary search to find first element which greater or equal to target
 >	* use `target` and `target+1` to get the two bounds 
 
-###35.	Search Insert Position	
+###35.	Search Insert Position `finish`
+>	* binary search  
+	
 ###36.	Valid Sudoku	
 ###37.	Sudoku Solver	
 ###38.	Count and Say	

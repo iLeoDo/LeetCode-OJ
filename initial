@@ -1,3 +1,4 @@
 #!/bin/bash
 className=P$1_$2
 echo -e "\npublic class $className{\n\n}" > $className.java
+st $className.java
