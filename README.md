@@ -249,7 +249,10 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###157. Read N Characters Given Read4 
 ###158. Read N Characters Given Read4 II - Call multiple times 
 ###159. Longest Substring with At Most Two Distinct Characters 
-###160. Intersection of Two Linked Lists
+###160. Intersection of Two Linked Lists `finish`
+>	* get length for tow linked lists
+>	* if two linked lists have intersection, they will have same end  
+
 ###161. One Edit Distance 	
 ###162. Find Peak Element	
 ###163. Missing Ranges 	
