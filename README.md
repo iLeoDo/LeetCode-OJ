@@ -88,7 +88,11 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###45.	Jump Game II	
 ###46.	Permutations	
 ###47.	Permutations II	
-###48.	Rotate Image	
+###48.	Rotate Image	`finish`
+>	* two loop
+>	* outer : layer
+>	* inner : node on each side  
+
 ###49.	Anagrams	
 ###50.	Pow(x, n)	
 ###51.	N-Queens	
