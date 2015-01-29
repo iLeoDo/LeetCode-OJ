@@ -42,7 +42,8 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###18.	4Sum	
 ###19.	Remove Nth Node From End of List `finish`
 >	* create a gap between two pointers, which distance is `n`.
->	* careful with the situation that remove the first node in the list.
+>	* careful with the situation that remove the first node in the list.  
+
 ###20.	Valid Parentheses	
 ###21.	Merge Two Sorted Lists	
 ###22.	Generate Parentheses	
@@ -60,7 +61,10 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###31.	Next Permutation	
 ###32.	Longest Valid Parentheses
 ###33.	Search in Rotated Sorted Array
-###34.	Search for a Range	
+###34.	Search for a Range	｀finish｀
+>	* a helper method that use binary search to find first element which greater or equal to target
+>	* use `target` and `target+1` to get the two bounds 
+
 ###35.	Search Insert Position	
 ###36.	Valid Sudoku	
 ###37.	Sudoku Solver	
