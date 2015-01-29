@@ -135,7 +135,10 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###75.	Sort Colors	
 ###76.	Minimum Window Substring	
 ###77.	Combinations	
-###78.	Subsets	
+###78.	Subsets	`finish`
+>	* use several bits of a integer as the indicators, who indicates whether S[i] included int the subset
+>	* 2^n = 1<<n
+
 ###79.	Word Search	
 ###80.	Remove Duplicates from Sorted Array II
 ###81.	Search in Rotated Sorted Array II
