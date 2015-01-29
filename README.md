@@ -207,7 +207,12 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###122. Best Time to Buy and Sell Stock II
 ###123. Best Time to Buy and Sell Stock III
 ###124. Binary Tree Maximum Path Sum
-###125. Valid Palindrome	
+###125. Valid Palindrome	`finish`
+>	* Two Pointer from start and end seperately
+>	* Character.isLetterOrDigit(char)
+>	* Character.toLowerCase(char)
+>	* Character.isLetter(char)  
+
 ###126. Word Ladder II	
 ###127. Word Ladder	
 ###128. Longest Consecutive Sequence
