@@ -171,7 +171,9 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 >	* BFS 
 
 ###103. Binary Tree Zigzag Level Order Traversal
-###104. Maximum Depth of Binary Tree
+###104. Maximum Depth of Binary Tree `finish`
+>	* BFS    
+
 ###105. Construct Binary Tree from Preorder and Inorder Traversal
 ###106. Construct Binary Tree from Inorder and Postorder Traversal
 ###107. Binary Tree Level Order Traversal II `finish`
@@ -189,7 +191,9 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 >	* use a holder datastructure(e.g. ArrayList) to keep the current node to insert
 
 ###110. Balanced Binary Tree	
-###111. Minimum Depth of Binary Tree
+###111. Minimum Depth of Binary Tree `finish`
+>	* care about the definition of minimum Depth of BTree  
+
 ###112. Path Sum	
 ###113. Path Sum II	
 ###114. Flatten Binary Tree to Linked List
