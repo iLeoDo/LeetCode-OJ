@@ -276,6 +276,11 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 
 ###161. One Edit Distance
 ###162. Find Peak Element
+>	* Use binary search tree thinking 
+>	* Compare num[mid] and num[mid+1], the peak must be on left or right half side.
+>	* note that the peak might be 1st or last one element due to that
+>	* num[-1] = num[size] = \infinity
+
 ###163. Missing Ranges
 ###164. Maximum Gap
 ###165. Compare Version Numbers
@@ -290,7 +295,7 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###171. Excel Sheet Column Number
 ###172. Factorial Trailing Zeroes
 ###173. Binary Search Tree Iterator
-> * Application of Inorder traverse of a tree in iterative.
+>	* Application of Inorder traverse of a tree in iterative.
 
 ###174. Dungeon Game
 ###179. Largest Number	`finish`
