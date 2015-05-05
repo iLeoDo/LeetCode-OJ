@@ -5,27 +5,29 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 
 ##Task List
 -------------
-###1.	Two Sum `finish`
+###1.	Two Sum `Finish`
 >	* make use the buildin data structure
 >	* store the integer array into hashmap(`value, index`) to make the search fast
 >	* Hashtable search O(n)
 >	* return array `return new int[]{a,b}`
 >	* only search one cycle, from the start to end of the array. (2-cycle is not the best solution)
 
-###2.	Add Two Numbers	`finish`
+###2.	Add Two Numbers	`Finish`
 >	* left node is the Least Significant Digit
+>	* use dummy head
 
 ###3.	Longest Substring Without Repeating Characters `finish`
 >	* traverse string from left, update the last occurs index for each character.
 
 ###4.	Median of Two Sorted Arrays
 ###5.	Longest Palindromic Substring
-###6.	ZigZag Conversion	`finish`
+###6.	ZigZag Conversion	`Finish`
 >	* list several example (e.g. `nRows` = 3,4), obverse the regulation of the index increament
->	* notice the situation when `nRows`=1
+>	* build the substring for each row.
+>	* notice the edge case when `nRows`=1
 
-###7.	Reverse Integer	`finish`
->	* in order to avoid overflow, a double check should be conducted after muplication.
+###7.	Reverse Integer	`Finish`
+>	* in order to avoid overflow, a double check should be conducted after muplication
 
 ###8.	String to Integer (atoi)
 ###9.	Palindrome Number
