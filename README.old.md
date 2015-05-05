@@ -10,7 +10,6 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 >	* store the integer array into hashmap(`value, index`) to make the search fast
 >	* Hashtable search O(n)
 >	* return array `return new int[]{a,b}`
->	* only search one cycle, from the start to end of the array. (2-cycle is not the best solution)
 
 ###2.	Add Two Numbers	`finish`
 >	* left node is the Least Significant Digit

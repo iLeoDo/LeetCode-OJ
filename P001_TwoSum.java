@@ -21,3 +21,22 @@ public class P001_TwoSum{
         return null;
     }
 }
+
+public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        HashMap<Integer,Integer> indexTable = new HashMap<Integer,Integer>();
+        for(int index2=0;index2<nums.length;index2++){
+            // the number to find
+            int toFind = target-nums[index2];
+            // find the remainder in the indexTable
+            Integer index1 = indexTable.get(toFind);
+            if(index1!=null){
+                return new int[]{index1+1, index2+1};
+            }else{
+                indexTable.put(nums[index2],index2);
+            }
+        }
+        return null;
+        //unreachable;
+    }
+}
