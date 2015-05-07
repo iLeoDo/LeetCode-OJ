@@ -22,15 +22,23 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###4.	Median of Two Sorted Arrays
 ###5.	Longest Palindromic Substring
 ###6.	ZigZag Conversion	`Finish`
->	* list several example (e.g. `nRows` = 3,4), obverse the regulation of the index increament
+>	* list several example (e.g. `nRows = 3,4`), obverse the regulation of the index increament
 >	* build the substring for each row.
->	* notice the edge case when `nRows`=1
+>	* notice the edge case when `nRows=1`
 
 ###7.	Reverse Integer	`Finish`
 >	* in order to avoid overflow, a double check should be conducted after muplication
+>	* edge case: `x = Integer.MIN_VALUE`
 
-###8.	String to Integer (atoi)
-###9.	Palindrome Number
+###8.	String to Integer (atoi) `Finish`
+>	* For this kind of problem, the condition of overflow is: `Integer.MAX_VALUE/10 < original||(Integer.MAX_VALUE/10 == original && ch-'0'>Integer.MAX_VALUE%10)`   (only for absolute value)
+
+###9.	Palindrome Number `Finish`
+>	* get the length of integer
+>	* compare front and real digits of integer
+>	* then, remove the front and real digits
+>	* `Math.pow(int)` return a `double` value
+
 ###10.	Regular Expression Matching
 ###11.	Container With Most Water
 ###12.	Integer to Roman
