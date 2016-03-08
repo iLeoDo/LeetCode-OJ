@@ -2,10 +2,13 @@
 ===============
 
 All Questions are from [oj.leetcode.com](oj.leetcode.com)
+:ok_hand: pass
+
+:star: star
 
 ##Task List
 -------------
-###1.	Two Sum `Finish`
+###1.	Two Sum :ok_hand:
 >	* make use the buildin data structure
 >	* store the integer array into hashmap(`value, index`) to make the search fast
 >	* Hashtable search O(n)
@@ -251,7 +254,7 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 
 ###142. Linked List Cycle II
 ###143. Reorder List
-###144. Binary Tree Preorder Traversal `finish`
+###144. Binary Tree Preorder Traversal :ok_hand:
 >	* make use of stack and queue when traverse the tree
 
 ###145. Binary Tree Postorder Traversal `finish`
@@ -287,7 +290,7 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 
 ###161. One Edit Distance
 ###162. Find Peak Element
->	* Use binary search tree thinking 
+>	* Use binary search tree thinking
 >	* Compare num[mid] and num[mid+1], the peak must be on left or right half side.
 >	* note that the peak might be 1st or last one element due to that
 >	* num[-1] = num[size] = \infinity
