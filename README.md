@@ -5,7 +5,7 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 
 ##Task List
 -------------
-###1.	Two Sum `Finish` :bowtie:
+###1.	Two Sum `Finish`
 >	* make use the buildin data structure
 >	* store the integer array into hashmap(`value, index`) to make the search fast
 >	* Hashtable search O(n)
