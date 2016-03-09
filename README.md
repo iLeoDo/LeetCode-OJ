@@ -15,12 +15,13 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 >	* return array `return new int[]{a,b}`
 >	* only search one cycle, from the start to end of the array. (2-cycle is not the best solution)
 
-###2.	Add Two Numbers	`Finish`
+###2.	Add Two Numbers	:ok_hand:
 >	* left node is the Least Significant Digit
 >	* use dummy head
 
-###3.	Longest Substring Without Repeating Characters `finish`
+###3.	Longest Substring Without Repeating Characters :ok_hand:
 >	* traverse string from left, update the last occurs index for each character.
+> * use two pointer indicate the substrings, move the head pointer only if the tail meet some repeated char in the substring.
 
 ###4.	Median of Two Sorted Arrays
 ###5.	Longest Palindromic Substring

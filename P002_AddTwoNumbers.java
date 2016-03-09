@@ -12,17 +12,16 @@
 
 public class P002_AddTwoNumbers{
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode dummyHead = new ListNode(0);
+        ListNode traversal = dummyHead;
         int carry = 0;
-        ListNode dummyHead = new ListNode(Integer.MAX_VALUE);
-        ListNode traverse = dummyHead;
         while(l1!=null||l2!=null||carry!=0){
-            int v1 = l1==null?0+carry:l1.val+carry;
-            int v2 = l2==null?0+v1:l2.val+v1;
-            traverse.next = new ListNode(v2%10);
-            carry = v2/10;
-            traverse = traverse.next;
-            l1 = l1==null?null:l1.next;
-            l2 = l2==null?null:l2.next;
+            int result = (l1==null ? 0 : l1.val)+(l2==null ? 0 : l2.val)+carry;
+            l1 = (l1 == null) ? null : l1.next;
+            l2 = (l2 == null) ? null : l2.next;
+            traversal.next = new ListNode(result%10);
+            carry = result/10;
+            traversal = traversal.next;
         }
         return dummyHead.next;
     }
