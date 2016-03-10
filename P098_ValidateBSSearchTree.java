@@ -1,6 +1,35 @@
 
 public class P098_ValidateBSSearchTree{
-	public boolean isValidBST(TreeNode root) {
+
+    /**
+     * Iteratively
+     */
+    public boolean isValidBST(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        TreeNode current = root;
+        Integer max = null; // or use Long to avoid the Integer.MIN_VALUE in the tree
+        while(current!=null||!stack.empty()){
+            while(current!=null){
+                stack.push(current);
+                current = current.left;
+            }
+            current = stack.pop();
+            // core start
+            if(max==null||current.val>max){
+                max = current.val;
+            }else{
+                return false;
+            }
+            // core end
+            current = current.right;
+        }
+        return true;
+    }
+
+    /**
+     * Recursive
+     */
+    public boolean isValidBST(TreeNode root) {
         return isValidBST(root, Long.MIN_VALUE, Long.MAX_VALUE);
     }
 

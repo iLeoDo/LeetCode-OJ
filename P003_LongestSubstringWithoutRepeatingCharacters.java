@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class P002_LongestSubStringWRC{
+public class P003_LongestSubstringWithoutRepeatingCharacters{
 	public int lengthOfLongestSubstring(String s) {
         HashMap<Character,Integer> visited = new HashMap<Character,Integer>();
         // max length tracker

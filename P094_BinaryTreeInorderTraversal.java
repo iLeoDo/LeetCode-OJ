@@ -8,11 +8,10 @@
  * }
  */
 import java.util.*;
-public class P094_BTreeInorderTraversal {
+public class P094_BinaryTreeInorderTraversal {
     public List<Integer> inorderTraversal(TreeNode root) {
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        List<Integer> traversal = new ArrayList<Integer>();
         Stack<TreeNode> stack = new Stack<TreeNode>();
-        
         TreeNode current = root;
         while(current!=null||!stack.empty()){
             while(current!=null){
@@ -20,10 +19,9 @@ public class P094_BTreeInorderTraversal {
                 current = current.left;
             }
             current = stack.pop();
-            list.add(current.val);
+            traversal.add(current.val);
             current = current.right;
         }
-        return list;
-        
+        return traversal;
     }
 }

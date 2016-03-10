@@ -173,13 +173,19 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###91.	Decode Ways
 ###92.	Reverse Linked List II
 ###93.	Restore IP Addresses
-###94.	Binary Tree Inorder Traversal `finish`
+###94.	Binary Tree Inorder Traversal :ok_hand:
 >	* make use of stack and queue when traverse the tree
 
-###95.	Unique Binary Search Trees II
-###96.	Unique Binary Search Trees
+###95.	Unique Binary Search Trees II :ok_hand:
+> * dynamic programming
+> * use a table to record all structures for `n = 1..n`
+> * for each case, select the target root from 1 to n.
+
+###96.	Unique Binary Search Trees :ok_hand:
+> * refer to #95
+
 ###97.	Interleaving String
-###98.	Validate Binary Search Tree `finish`
+###98.	Validate Binary Search Tree :ok_hand:
 >	* use Long to avoid the case that `Integer.MAX_VALUE` and `Integer.MIN_VALUE` included in the tree
 
 ###99. Recover Binary Search Tree
