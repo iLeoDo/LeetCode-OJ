@@ -189,7 +189,7 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 >	* use Long to avoid the case that `Integer.MAX_VALUE` and `Integer.MIN_VALUE` included in the tree
 
 ###99. Recover Binary Search Tree
-###100. Same Tree
+###100. Same Tree :ok_hand:
 > * similar to #101
 
 ###101. Symmetric Tree :ok_hand:
@@ -208,8 +208,14 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 > * DFS iterative use two stack track the traversal node and depth.
 > * DFS recursive is another way.
 
-###105. Construct Binary Tree from Preorder and Inorder Traversal
-###106. Construct Binary Tree from Inorder and Postorder Traversal
+###105. Construct Binary Tree from Preorder and Inorder Traversal :ok_hand:
+> * first elment in preorder traversal of a tree is the root
+> * find the index of the root in the inorder traversal, then split it into inorder traversal of left and right substree
+> * recursive.
+
+###106. Construct Binary Tree from Inorder and Postorder Traversal :ok_hand:
+> * similar to #105
+
 ###107. Binary Tree Level Order Traversal II `finish`
 >	* BFS
 >	* LinkedList addFirst();
