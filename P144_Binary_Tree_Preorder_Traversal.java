@@ -7,10 +7,11 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-/**
- * Iteratively
- */
+
 public class P144_BTreePreorderTraversal {
+    /**
+     * Iteratively
+     */
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> traversal = new ArrayList<Integer>();
         Stack<TreeNode> stack = new Stack<TreeNode>();
@@ -25,12 +26,10 @@ public class P144_BTreePreorderTraversal {
         }
         return traversal;
     }
-}
-/**
- * Recursive
- */
-public class P144_BTreePreorderTraversal {
-    public class Solution {
+
+    /**
+     * Recursive
+     */
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> traversal = new ArrayList<Integer>();
         if(root==null){
@@ -43,5 +42,5 @@ public class P144_BTreePreorderTraversal {
         }
     }
 }
-}
+
 

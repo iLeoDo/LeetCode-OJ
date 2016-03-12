@@ -190,13 +190,23 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 
 ###99. Recover Binary Search Tree
 ###100. Same Tree
-###101. Symmetric Tree
-###102. Binary Tree Level Order Traversal `finish`
+> * similar to #101
+
+###101. Symmetric Tree :ok_hand:
+> * check inorder traversal is not working. e.g. [1,2,3,3,null,2,null]
+> * use a queue to track the left and right branches, compare pair by pair.
+> * BFS
+
+###102. Binary Tree Level Order Traversal :ok_hand:
 >	* BFS
 
-###103. Binary Tree Zigzag Level Order Traversal
-###104. Maximum Depth of Binary Tree `finish`
->	* BFS
+###103. Binary Tree Zigzag Level Order Traversal :ok_hand:
+> * BFS with a order flag
+
+###104. Maximum Depth of Binary Tree :ok_hand:
+>	* BFS iterative is easy as #102
+> * DFS iterative use two stack track the traversal node and depth.
+> * DFS recursive is another way.
 
 ###105. Construct Binary Tree from Preorder and Inorder Traversal
 ###106. Construct Binary Tree from Inorder and Postorder Traversal
