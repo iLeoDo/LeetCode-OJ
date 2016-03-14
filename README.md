@@ -89,8 +89,14 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###36.	Valid Sudoku
 ###37.	Sudoku Solver
 ###38.	Count and Say
-###39.	Combination Sum
-###40.	Combination Sum II
+###39.	Combination Sum :ok_hand:
+> * dp problem
+> * miss test case: duplicate element in candidates[].
+
+###40.	Combination Sum II :ok_hand:
+> * similar to #39
+> * select the candidate only once per ** sub solution **
+
 ###41.	First Missing Positive
 ###42.	Trapping Rain Water
 ###43.	Multiply Strings	`finish`
@@ -103,10 +109,11 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###45.	Jump Game II
 ###46.	Permutations
 ###47.	Permutations II
-###48.	Rotate Image	`finish`
+###48.	Rotate Image	:ok_hand:
 >	* two loop
 >	* outer : layer
 >	* inner : node on each side
+> * tips: keep original index.
 
 ###49.	Anagrams
 ###50.	Pow(x, n)
@@ -338,3 +345,156 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###179. Largest Number	`finish`
 >	* self-define Comparator
 >	* two different comparators are given in code
+
+###186. Reverse Words in a String II
+###187. Repeated DNA Sequences
+###188. Best Time to Buy and Sell Stock IV
+###189. Rotate Array
+###190. Reverse Bits
+###191. Number of 1 Bits
+###198. House Robber
+###199. Binary Tree Right Side View
+###200. Number of Islands
+###201. Bitwise AND of Numbers Range
+###202. Happy Number
+###203. Remove Linked List Elements
+###204. Count Primes
+###205. Isomorphic Strings
+###206. Reverse Linked List
+###207. Course Schedule
+###208. Implement Trie (Prefix Tree)
+###209. Minimum Size Subarray Sum
+###210. Course Schedule II
+###211. Add and Search Word - Data structure design
+###212. Word Search II
+###213. House Robber II
+###214. Shortest Palindrome
+###215. Kth Largest Element in an Array
+###216. Combination Sum III :ok_hand:
+> * similar to 39
+> * structure.add / recursive / structure.remove is a good way to make use of a track structure
+> * in base case of recursive, structure should be cloned.
+
+###217. Contains Duplicate
+###218. The Skyline Problem
+###219. Contains Duplicate II
+###220. Contains Duplicate III
+###221. Maximal Square
+###222. Count Complete Tree Nodes
+###223. Rectangle Area
+###224. Basic Calculator
+###225. Implement Stack using Queues
+###226. Invert Binary Tree
+###227. Basic Calculator II
+###228. Summary Ranges
+###229. Majority Element II
+###230. Kth Smallest Element in a BST
+###231. Power of Two
+###232. Implement Queue using Stacks
+###233. Number of Digit One
+###234. Palindrome Linked List
+###235. Lowest Common Ancestor of a Binary Search Tree
+###236. Lowest Common Ancestor of a Binary Tree
+###237. Delete Node in a Linked List
+###238. Product of Array Except Self
+###239. Sliding Window Maximum
+###240. Search a 2D Matrix II
+###241. Different Ways to Add Parentheses
+###242. Valid Anagram
+###243. Shortest Word Distance
+###244. Shortest Word Distance II
+###245. Shortest Word Distance III
+###246. Strobogrammatic Number
+###247. Strobogrammatic Number II
+###248. Strobogrammatic Number III
+###249. Group Shifted Strings
+###250. Count Univalue Subtrees
+###251. Flatten 2D Vector
+###252. Meeting Rooms
+###253. Meeting Rooms II
+###254. Factor Combinations
+###255. Verify Preorder Sequence in Binary Search Tree
+###256. Paint House
+###257. Binary Tree Paths
+###258. Add Digits
+###259. 3Sum Smaller
+###260. Single Number III
+###261. Graph Valid Tree
+###263. Ugly Number
+###264. Ugly Number II
+###265. Paint House II
+###266. Palindrome Permutation
+###267. Palindrome Permutation II
+###268. Missing Number
+###269. Alien Dictionary
+###270. Closest Binary Search Tree Value
+###271. Encode and Decode Strings
+###272. Closest Binary Search Tree Value II
+###273. Integer to English Words
+###274. H-Index
+###275. H-Index II
+###276. Paint Fence
+###277. Find the Celebrity
+###278. First Bad Version
+###279. Perfect Squares
+###280. Wiggle Sort
+###281. Zigzag Iterator
+###282. Expression Add Operators
+###283. Move Zeroes
+###284. Peeking Iterator
+###285. Inorder Successor in BST
+###286. Walls and Gates
+###287. Find the Duplicate Number
+###288. Unique Word Abbreviation
+###289. Game of Life
+###290. Word Pattern
+###291. Word Pattern II
+###292. Nim Game
+###293. Flip Game
+###294. Flip Game II
+###295. Find Median from Data Stream
+###296. Best Meeting Point
+###297. Serialize and Deserialize Binary Tree
+###298. Binary Tree Longest Consecutive Sequence
+###299. Bulls and Cows
+###300. Longest Increasing Subsequence
+###301. Remove Invalid Parentheses
+###302. Smallest Rectangle Enclosing Black Pixels
+###303. Range Sum Query - Immutable
+###304. Range Sum Query 2D - Immutable
+###305. Number of Islands II
+###306. Additive Number
+###307. Range Sum Query - Mutable
+###308. Range Sum Query 2D - Mutable
+###309. Best Time to Buy and Sell Stock with Cooldown
+###310. Minimum Height Trees
+###311. Sparse Matrix Multiplication
+###312. Burst Balloons
+###313. Super Ugly Number
+###314. Binary Tree Vertical Order Traversal
+###315. Count of Smaller Numbers After Self
+###316. Remove Duplicate Letters
+###317. Shortest Distance from All Buildings
+###318. Maximum Product of Word Lengths
+###319. Bulb Switcher
+###320. Generalized Abbreviation
+###321. Create Maximum Number
+###322. Coin Change
+###323. Number of Connected Components in an Undirected Graph
+###324. Wiggle Sort II
+###325. Maximum Size Subarray Sum Equals k
+###326. Power of Three
+###327. Count of Range Sum
+###328. Odd Even Linked List
+###329. Longest Increasing Path in a Matrix
+###330. Patching Array
+###331. Verify Preorder Serialization of a Binary Tree
+###332. Reconstruct Itinerary
+###333. Largest BST Subtree
+###334. Increasing Triplet Subsequence
+###335. Self Crossing
+###336. Palindrome Pairs
+###337. House Robber III
+
+
+
