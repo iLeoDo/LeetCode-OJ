@@ -59,7 +59,10 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 >	* create a gap between two pointers, which distance is `n`.
 >	* careful with the situation that remove the first node in the list.
 
-###20.	Valid Parentheses
+###20.	Valid Parentheses :ok_hand:
+> * use stack to check the pair
+> * use integer instand of the char to siplify the code.
+
 ###21.	Merge Two Sorted Lists
 ###22.	Generate Parentheses
 ###23.	Merge k Sorted Lists
@@ -109,14 +112,22 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###45.	Jump Game II
 ###46.	Permutations
 ###47.	Permutations II
-###48.	Rotate Image	:ok_hand:
+###48.	Rotate Image :ok_hand:
 >	* two loop
 >	* outer : layer
 >	* inner : node on each side
 > * tips: keep original index.
 
-###49.	Anagrams
-###50.	Pow(x, n)
+###49.	Anagrams :ok_hand:
+> * sort the strings array.
+> * use hashmap
+
+###50.	Pow(x, n) :ok_hand:
+> * n<0
+> * n = Integer.MIN_VALUE
+> * n%2==0
+> * n%2==1
+
 ###51.	N-Queens
 ###52.	N-Queens II
 ###53.	Maximum Subarray
@@ -146,7 +157,7 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 >	* use helper method to get target digit of a String
 
 ###68.	Text Justification
-###69.	Sqrt(x) `finish`
+###69.	Sqrt(x) :ok_hand:
 >	* Apply the thinking of binary search
 
 ###70.	Climbing Stairs
@@ -245,13 +256,20 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###113. Path Sum II
 ###114. Flatten Binary Tree to Linked List
 ###115. Distinct Subsequences
-###116. Populating Next Right Pointers in Each Node
+###116. Populating Next Right Pointers in Each Node  :ok_hand:
+> * traversal level by level
+> * queue is useless because of the `next` pointer
+
 ###117. Populating Next Right Pointers in Each Node II
 ###118. Pascal's Triangle
 ###119. Pascal's Triangle II
 ###120. Triangle
-###121. Best Time to Buy and Sell Stock
-###122. Best Time to Buy and Sell Stock II
+###121. Best Time to Buy and Sell Stock :ok_hand:
+> * Maximum subarray problem
+
+###122. Best Time to Buy and Sell Stock II :ok_hand:
+> * Maximum subarray problem
+
 ###123. Best Time to Buy and Sell Stock III
 ###124. Binary Tree Maximum Path Sum
 ###125. Valid Palindrome	`finish`
@@ -278,11 +296,20 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 >	* one addition space in array make it more readable.
 
 ###140. Word Break II
-###141. Linked List Cycle	`finish`
->	* use two pointers, fast one jump by two elemnts, slow one jump by one element.
+###141. Linked List Cycle :ok_hand:
+>	* use two pointers, fast one jump by two elements, slow one jump by one element.
 >	* deal with "null" pointers
 
-###142. Linked List Cycle II
+###142. Linked List Cycle II :ok_hand:
+> ~~~~~~~~~~=======
+>          |      ||
+>           ---x===
+>   * assume `len(~) = s`, `len(=) = p`,`len(-) = q`
+>   * similar to #141, after two pointers meet in x, we have
+>   * `2*(s+p+m*(p+q)) - (s+p+n*(p+q)) = k*(p+q)`, where `m,n,k` in `1...MAX`
+>   * then, `s=r(p+q)-p`, according to this relationship, we can:
+>   * move slow pointer to head.
+
 ###143. Reorder List
 ###144. Binary Tree Preorder Traversal :ok_hand:
 >	* make use of stack and queue when traverse the tree
@@ -304,17 +331,17 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###152. Maximum Product Subarray
 ###153. Find Minimum in Rotated Sorted Array
 ###154. Find Minimum in Rotated Sorted Array II
-###155. Min Stack	`finish`
+###155. Min Stack :ok_hand:
 >	* trade-off between time and space.
 >	* use one more stack store the min-value
->	* only update the "minStack" when a new min value come
+>	* only update the "minStack" when a new min value come (new <= curentMin)
 >	* one more space at the bottom of stack (with value `Integer.MAX_VALUE`)
 
 ###156. Binary Tree Upside Down
 ###157. Read N Characters Given Read4
 ###158. Read N Characters Given Read4 II - Call multiple times
 ###159. Longest Substring with At Most Two Distinct Characters
-###160. Intersection of Two Linked Lists `finish`
+###160. Intersection of Two Linked Lists :ok_hand:
 >	* get length for tow linked lists
 >	* if two linked lists have intersection, they will have same end
 
@@ -383,7 +410,9 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###222. Count Complete Tree Nodes
 ###223. Rectangle Area
 ###224. Basic Calculator
-###225. Implement Stack using Queues
+###225. Implement Stack using Queues :ok_hand:
+> * cyclise the queue.
+
 ###226. Invert Binary Tree
 ###227. Basic Calculator II
 ###228. Summary Ranges
@@ -425,7 +454,10 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###265. Paint House II
 ###266. Palindrome Permutation
 ###267. Palindrome Permutation II
-###268. Missing Number
+###268. Missing Number :ok_hand:
+> * sum the sequence.
+> * attention overflow of integer
+
 ###269. Alien Dictionary
 ###270. Closest Binary Search Tree Value
 ###271. Encode and Decode Strings
@@ -488,7 +520,9 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###328. Odd Even Linked List
 ###329. Longest Increasing Path in a Matrix
 ###330. Patching Array
-###331. Verify Preorder Serialization of a Binary Tree
+###331. Verify Preorder Serialization of a Binary Tree :ok_hand:
+> * use stack to reduce the string.
+
 ###332. Reconstruct Itinerary
 ###333. Largest BST Subtree
 ###334. Increasing Triplet Subsequence

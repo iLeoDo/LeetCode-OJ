@@ -1,21 +1,17 @@
 
 public class P069_Sqrt{
-	public int sqrt(int x) {
-        long left =0;
-        long right = x;
-        while(left<right){
-            long mid = (left+right)/2;
-            if(mid*mid<x){
-                left = mid+1;
-            }else if(mid*mid==x){
+	public int mySqrt(int x) {
+        long low = 0, high = x;
+        while(low<=high){
+            long mid = (low+high)/2;
+            if(mid*mid>x){
+                high = mid-1;
+            }else if(mid*mid<=x&&(mid+1)*(mid+1)>x){
                 return (int)mid;
             }else{
-                right = mid-1;
+                low = mid+1;
             }
         }
-        if(left*left>x){
-            return (int)(left-1);
-        }else
-            return (int)left;
+        return -1;
     }
 }

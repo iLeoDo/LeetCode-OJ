@@ -11,17 +11,14 @@
  */
 public class P142_LinkedListCycle {
     public boolean hasCycle(ListNode head) {
-        if(head==null||head.next==null){
-            return false;
-        }
         ListNode slow = head;
-        ListNode fast = head.next;
+        ListNode fast = head;
         while(fast!=null&&fast.next!=null){
-            if(fast==slow){
-                return true;
-            }
             fast = fast.next.next;
             slow = slow.next;
+            if(slow==fast){
+                return true;
+            }
         }
         return false;
     }
