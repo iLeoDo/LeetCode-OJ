@@ -8,7 +8,7 @@
  * }
  */
 
-public class P144_BTreePreorderTraversal {
+public class P144_BinaryTreePreorderTraversal {
     /**
      * Iteratively
      */

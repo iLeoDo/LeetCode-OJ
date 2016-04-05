@@ -10,30 +10,25 @@
  * }
  */
 public class P061_RotateList {
-    public ListNode rotateRight(ListNode head, int n) {
-        if(head==null){
-            return null;
-        }
-        int count = 1;
-        ListNode current = head;
+    public ListNode rotateRight(ListNode head, int k) {
+        ListNode dummyHead = new ListNode(0);
+        dummyHead.next=head;
+        ListNode current = dummyHead;
+        int len=0;
         while(current.next!=null){
-            count++;
             current = current.next;
+            len++;
         }
         current.next = head;//make the list as a circle
-        
-        int left = count-n%count;
-        
-        ListNode prev = head;
-        current = head.next;
-        left--;//because current point to 2nd element.
-        while(left>0){
-            prev = prev.next;
-            current = current.next;
-            left--;
+
+        len = len-k%Math.max(1,len); // len=0
+        while(len>0){
+            current=current.next;
+            len--;
         }
-        
-        prev.next = null;
-        return current;
+        head=current.next;
+        current.next=null;
+        return head;
     }
+
 }

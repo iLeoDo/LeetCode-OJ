@@ -9,55 +9,66 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ##Task List
 -------------
 ###1.	Two Sum :ok_hand:
->	* make use the buildin data structure
->	* store the integer array into hashmap(`value, index`) to make the search fast
->	* Hashtable search O(n)
->	* return array `return new int[]{a,b}`
->	* only search one cycle, from the start to end of the array. (2-cycle is not the best solution)
+> * make use the buildin data structure
+> * store the integer array into hashmap(`value, index`) to make the search fast
+> * Hashtable search O(n)
+> * return array `return new int[]{a,b}`
+> * only search one cycle, from the start to end of the array. (2-cycle is not the best solution)
 
 ###2.	Add Two Numbers	:ok_hand:
->	* left node is the Least Significant Digit
->	* use dummy head
+> * left node is the Least Significant Digit
+> * use dummy head
 
 ###3.	Longest Substring Without Repeating Characters :ok_hand:
->	* traverse string from left, update the last occurs index for each character.
+> * traverse string from left, update the last occurs index for each character.
 > * use two pointer indicate the substrings, move the head pointer only if the tail meet some repeated char in the substring.
 
 ###4.	Median of Two Sorted Arrays
-###5.	Longest Palindromic Substring
+###5.	Longest Palindromic Substring :ok_hand:
+> * extendly check the palindromic substring with a middle point 0..length
+> * odd or even.
+
 ###6.	ZigZag Conversion	`Finish`
 >	* list several example (e.g. `nRows = 3,4`), obverse the regulation of the index increament
 >	* build the substring for each row.
 >	* notice the edge case when `nRows=1`
 
-###7.	Reverse Integer	`Finish`
+###7.	Reverse Integer :ok_hand:
 >	* in order to avoid overflow, a double check should be conducted after muplication
 >	* edge case: `x = Integer.MIN_VALUE`
 
 ###8.	String to Integer (atoi) `Finish`
 >	* For this kind of problem, the condition of overflow is: `Integer.MAX_VALUE/10 < original||(Integer.MAX_VALUE/10 == original && ch-'0'>Integer.MAX_VALUE%10)`   (only for absolute value)
 
-###9.	Palindrome Number `Finish`
+###9.	Palindrome Number :ok_hand:
 >	* get the length of integer
 >	* compare front and real digits of integer
 >	* then, remove the front and real digits
 >	* `Math.pow(int)` return a `double` value
 
 ###10.	Regular Expression Matching
-###11.	Container With Most Water
+###11.	Container With Most Water :ok_hand:
+> * two pointers
+
 ###12.	Integer to Roman
 ###13.	Roman to Integer
-###14.	Longest Common Prefix	`finish`
+###14.	Longest Common Prefix :ok_hand:
 >	* compare String one by one.
 >	* for the method who return String, normally return "" (empty String) when edge case.
 
-###15.	3Sum
-###16.	3Sum Closest
+###15.	3Sum :ok_hand:
+> * constrain the smallest number
+> * use two pointers to find the second and third one
+> * note: duplicate numbers
+
+###16.	3Sum Closest :ok_hand:
+> * similar to #15
+
 ###17.	Letter Combinations of a Phone Number
 ###18.	4Sum
-###19.	Remove Nth Node From End of List `finish`
->	* create a gap between two pointers, which distance is `n`.
->	* careful with the situation that remove the first node in the list.
+###19.	Remove Nth Node From End of List :ok_hand:
+> * create a gap between two pointers, which distance is `n`.
+> * careful with the situation that remove the first node in the list. (dummyHead can be adopted)
 
 ###20.	Valid Parentheses :ok_hand:
 > * use stack to check the pair
@@ -66,10 +77,17 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###21.	Merge Two Sorted Lists
 ###22.	Generate Parentheses
 ###23.	Merge k Sorted Lists
-###24.	Swap Nodes in Pairs
+###24.	Swap Nodes in Pairs :ok_hand:
+> * use dummy node
+
 ###25.	Reverse Nodes in k-Group
-###26.	Remove Duplicates from Sorted Array
-###27.	Remove Element
+###26.	Remove Duplicates from Sorted Array :ok_hand:
+>   * use a counter to count the number of duplications
+>   * a[i-counter] = a[i]
+
+###27.	Remove Element :ok_hand:
+> * O(n)
+
 ###28.	Implement strStr()
 ###29.	Divide Two Integers `finish`
 >	* `>>1` => `/2`
@@ -118,7 +136,7 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 >	* inner : node on each side
 > * tips: keep original index.
 
-###49.	Anagrams :ok_hand:
+###49.	Group Anagrams :ok_hand:
 > * sort the strings array.
 > * use hashmap
 
@@ -130,27 +148,40 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 
 ###51.	N-Queens
 ###52.	N-Queens II
-###53.	Maximum Subarray
-###54.	Spiral Matrix	`finish`
->	* careful about the cases that number of cols or rows is odd
->	* use `LinkedList` to imporve the performance when adding elements to list.
+###53.	Maximum Subarray :ok_hand:
+> * maxSumEndingHere, maxSumSoFar
+
+###54.	Spiral Matrix :ok_hand:
+> * careful about the cases that number of cols or rows is odd.(depends on the shape)
+> * use `LinkedList` to imporve the performance when adding elements to list.
 
 ###55.	Jump Game
-###56.	Merge Intervals
+###56.	Merge Intervals :ok_hand:
+> * Sort (Comparator -> compare(T,T))
+> *
+
 ###57.	Insert Interval
 ###58.	Length of Last Word
 ###59.	Spiral Matrix II
 ###60.	Permutation Sequence
-###61.	Rotate List	`finish`
->	* Count the full list and make it to be a circle
->	* use `n mod count` to calculate how many elements should be left.
->	* traverse again and split circle at appropriate point.
+###61.	Rotate List :ok_hand:
+> * Count the full list and make it to be a circle
+> * use `n mod count` to calculate how many elements should be left.
+> * traverse again and split circle at appropriate point.
 
-###62.	Unique Paths
-###63.	Unique Paths II
-###64.	Minimum Path Sum
+###62.	Unique Paths :ok_hand:
+> * DP, create a table
+
+###63.	Unique Paths II :ok_hand:
+> * in-place
+> * or an one-dimension array.
+
+###64.	Minimum Path Sum :ok_hand:
+> * dynamic programming
+> * special case: first row and first column
+
 ###65.	Valid Number
-###66.	Plus One	 `finish`
+###66.	Plus One `finish`
 >	*   start from the rightest digit, if `digits[i]==9` change it to 0, when finding one element is not 9, return.
 
 ###67.	Add Binary `finish`
@@ -169,23 +200,33 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###76.	Minimum Window Substring
 ###77.	Combinations
 ###78.	Subsets	`finish`
->	* use several bits of a integer as the indicators, who indicates whether S[i] included int the subset
->	* 2^n = 1<<n
+> * use several bits of a integer as the indicators, who indicates whether S[i] included int the subset
+> * 2^n = 1<<n
 
-###79.	Word Search
-###80.	Remove Duplicates from Sorted Array II
+###79.	Word Search :ok_hand:
+> * modify the visited point before and after the recursion.
+> * xor is a good way
+
+###80.	Remove Duplicates from Sorted Array II :ok_hand:
+> * count the time of duplicates
+> * reset the counter when meet a new element
+
 ###81.	Search in Rotated Sorted Array II
-###82.	Remove Duplicates from Sorted List II `finish`
->	* Two pointers
+###82.	Remove Duplicates from Sorted List II :ok_hand:
+> * dummyHead
+> * move current until its not a duplicate element.
 
-###83.	Remove Duplicates from Sorted List `finish`
->	* Two pointers
+###83.	Remove Duplicates from Sorted List :ok_hand:
+> * dummyHead
 
 ###84.	Largest Rectangle in Histogram
 ###85.	Maximal Rectangle
 ###86.	Partition List
 ###87.	Scramble String
-###88.	Merge Sorted Array
+###88.	Merge Sorted Array :ok_hand:
+> * merge two array from end to start.
+> * after the traversal on both nums1 and nums2, only the number bigger than nums1 will left in nums2
+
 ###89.	Gray Code
 ###90.	Subsets II
 ###91.	Decode Ways
@@ -234,7 +275,7 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###106. Construct Binary Tree from Inorder and Postorder Traversal :ok_hand:
 > * similar to #105
 
-###107. Binary Tree Level Order Traversal II `finish`
+###107. Binary Tree Level Order Traversal II :ok_hand:
 >	* BFS
 >	* LinkedList addFirst();
 
@@ -248,12 +289,22 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 >	* so use inorder traverse.
 >	* use a holder datastructure(e.g. ArrayList) to keep the current node to insert
 
-###110. Balanced Binary Tree
+###110. Balanced Binary Tree :ok_hand:
+> * defination of balanced binary tree:
+> * a binary tree in which the depth of the two subtrees of **every node** never differ by more than 1.
+> * use special value as the return value of the recursion to represent the unbalanced status.
+> * avoid recursion twice.
+
 ###111. Minimum Depth of Binary Tree `finish`
 >	* care about the definition of minimum Depth of BTree
 
-###112. Path Sum
-###113. Path Sum II
+###112. Path Sum :ok_hand:
+> * simple recursive
+
+###113. Path Sum II :ok_hand:
+> * use a list to track the traversal
+> * recursive
+
 ###114. Flatten Binary Tree to Linked List
 ###115. Distinct Subsequences
 ###116. Populating Next Right Pointers in Each Node  :ok_hand:
@@ -270,9 +321,12 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###122. Best Time to Buy and Sell Stock II :ok_hand:
 > * Maximum subarray problem
 
-###123. Best Time to Buy and Sell Stock III
+###123. Best Time to Buy and Sell Stock III :ok_hand:
+> * similar to #122 #188
+
+
 ###124. Binary Tree Maximum Path Sum
-###125. Valid Palindrome	`finish`
+###125. Valid Palindrome :ok_hand:
 >	* Two Pointer from start and end seperately
 >	* Character.isLetterOrDigit(char)
 >	* Character.toLowerCase(char)
@@ -283,15 +337,23 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###128. Longest Consecutive Sequence
 ###129. Sum Root to Leaf Numbers
 ###130. Surrounded Regions
-###131. Palindrome Partitioning
+###131. Palindrome Partitioning :ok_hand:
+> * implement a function to check whether s[a,b] is palindromic
+> * dfs from from the fist char ( s[0,0] => s[0,1] => s[0,2] ) with recursions.
+
 ###132. Palindrome Partitioning II
 ###133. Clone Graph
 ###134. Gas Station
 ###135. Candy
 ###136. Single Number
 ###137. Single Number II
-###138. Copy List with Random Pointer
-###139. Word Break	`finish`
+###138. Copy List with Random Pointer :ok_hand:
+> * step 1. insert copy after each original
+> * step 2. assign random
+> * step 3. split two lists.
+> * Another solution: `HashMap<RandomListNode,RandomListNode>`;
+
+###139. Word Break :ok_hand:
 >	* DP, use boolean array record whether current index is achievable.
 >	* one addition space in array make it more readable.
 
@@ -301,41 +363,48 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 >	* deal with "null" pointers
 
 ###142. Linked List Cycle II :ok_hand:
+> ```
 > ~~~~~~~~~~=======
 >          |      ||
 >           ---x===
->   * assume `len(~) = s`, `len(=) = p`,`len(-) = q`
->   * similar to #141, after two pointers meet in x, we have
->   * `2*(s+p+m*(p+q)) - (s+p+n*(p+q)) = k*(p+q)`, where `m,n,k` in `1...MAX`
->   * then, `s=r(p+q)-p`, according to this relationship, we can:
->   * move slow pointer to head.
+> ```
+> * assume `len(~) = s`, `len(=) = p`,`len(-) = q`
+> * similar to #141, after two pointers meet in x, we have
+> * `2*(s+p+m*(p+q)) - (s+p+n*(p+q)) = k*(p+q)`, where `m,n,k` in `1...MAX`
+> * then, `s=r(p+q)-p`, according to this relationship, we can:
+> * move slow pointer to head.
 
 ###143. Reorder List
 ###144. Binary Tree Preorder Traversal :ok_hand:
->	* make use of stack and queue when traverse the tree
+> * make use of stack and queue when traverse the tree
 
 ###145. Binary Tree Postorder Traversal `finish`
->	* track the number of access of each nodes
->	* when 2nd time, push right node into stack
->	* when 3rd time, add current Node to list.
+> * track the number of access of each nodes
+> * when 2nd time, push right node into stack
+> * when 3rd time, add current Node to list.
 
-###146. LRU Cache
+###146. LRU Cache :ok_hand:
+> * LinkedHashMap
+
 ###147. Insertion Sort List
 ###148. Sort List
 ###149. Max Points on a Line
 ###150. Evaluate Reverse Polish Notation
-###151. Reverse Words in a String `finish`
->	* finish in one pass
->	* two StringBuilder, one for current word, the other for final result
+###151. Reverse Words in a String :ok_hand:
+> * finish in one pass
+> * two StringBuilder, one for current word, the other for final result
+> * pseudo-in-place.
 
-###152. Maximum Product Subarray
+###152. Maximum Product Subarray :ok_hand:
+> * similar to #053, but track minEndingHere, too.
+
 ###153. Find Minimum in Rotated Sorted Array
 ###154. Find Minimum in Rotated Sorted Array II
 ###155. Min Stack :ok_hand:
->	* trade-off between time and space.
->	* use one more stack store the min-value
->	* only update the "minStack" when a new min value come (new <= curentMin)
->	* one more space at the bottom of stack (with value `Integer.MAX_VALUE`)
+> * trade-off between time and space.
+> * use one more stack store the min-value
+> * only update the "minStack" when a new min value come (new <= curentMin)
+> * one more space at the bottom of stack (with value `Integer.MAX_VALUE`)
 
 ###156. Binary Tree Upside Down
 ###157. Read N Characters Given Read4
@@ -358,13 +427,16 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###166. Fraction to Recurring Decimal
 ###167. Two Sum II - Input array is sorted
 ###168. Excel Sheet Column Title
-###169. Majority Element	`finish`
->	* Basic Concept: remove pair of different elements from the list, the majority element will not change.
->	* use stack to implement.
+###169. Majority Element :ok_hand:
+> * Sol1: Basic Concept: remove pair of different elements from the list, the majority element will not change. use stack to implement.
+> * Sol2: Sort, get the middle one
+> * Sol3: Moore voting
 
 ###170. Two Sum III - Data structure design
 ###171. Excel Sheet Column Number
-###172. Factorial Trailing Zeroes
+###172. Factorial Trailing Zeroes :ok_hand:
+> * return n/5 + n/25 + n/125 + n/625 + n/3125+...;
+
 ###173. Binary Search Tree Iterator
 >	* Application of Inorder traverse of a tree in iterative.
 
@@ -373,10 +445,22 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 >	* self-define Comparator
 >	* two different comparators are given in code
 
-###186. Reverse Words in a String II
+###186. Reverse Words in a String II  :ok_hand:
+> * reverse the whole sentence
+> * reverse word by word
+> * remove leading or trailing space if necessary.
+
 ###187. Repeated DNA Sequences
-###188. Best Time to Buy and Sell Stock IV
-###189. Rotate Array
+###188. Best Time to Buy and Sell Stock IV :ok_hand:
+> * DP
+
+
+###189. Rotate Array :ok_hand:
+> * `1,2,3,4,5` inverse
+> * `5,4,3,2,1` inverse
+> * `4,5,3,2,1` inverse
+> * `4,5,1,2,3`
+
 ###190. Reverse Bits
 ###191. Number of 1 Bits
 ###198. House Robber
@@ -384,12 +468,28 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###200. Number of Islands
 ###201. Bitwise AND of Numbers Range
 ###202. Happy Number
-###203. Remove Linked List Elements
+###203. Remove Linked List Elements :ok_hand:
+> * dummyHead
+
 ###204. Count Primes
 ###205. Isomorphic Strings
-###206. Reverse Linked List
+###206. Reverse Linked List :ok_hand:
+> * keep log on the new head and traversal pointer.
+> ```
+> ListNode current=head;
+> ListNode newHead=null;
+> while(current!=null){
+>     ListNode next = current.next;
+>     current.next = newHead;
+>     newHead = current;
+>     current = next;
+> }
+> ```
+
 ###207. Course Schedule
-###208. Implement Trie (Prefix Tree)
+###208. Implement Trie (Prefix Tree) :ok_hand:
+> * TrieNode(isWord,TrieNode[])
+
 ###209. Minimum Size Subarray Sum
 ###210. Course Schedule II
 ###211. Add and Search Word - Data structure design
@@ -417,14 +517,23 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###227. Basic Calculator II
 ###228. Summary Ranges
 ###229. Majority Element II
-###230. Kth Smallest Element in a BST
+###230. Kth Smallest Element in a BST :ok_hand:
+> * Inorder traversal
+
 ###231. Power of Two
 ###232. Implement Queue using Stacks
 ###233. Number of Digit One
-###234. Palindrome Linked List
+###234. Palindrome Linked List  :ok_hand:
+> * similar to #206
+> * find the mid point with reversing the first half
+> * compare them
+> * note: odd LinkedList
+
 ###235. Lowest Common Ancestor of a Binary Search Tree
 ###236. Lowest Common Ancestor of a Binary Tree
-###237. Delete Node in a Linked List
+###237. Delete Node in a Linked List  :ok_hand:
+> * copy the value of next node into current one.
+
 ###238. Product of Array Except Self
 ###239. Sliding Window Maximum
 ###240. Search a 2D Matrix II
@@ -457,6 +566,7 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###268. Missing Number :ok_hand:
 > * sum the sequence.
 > * attention overflow of integer
+> * xor operation a^i^i = a
 
 ###269. Alien Dictionary
 ###270. Closest Binary Search Tree Value
@@ -472,11 +582,15 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###280. Wiggle Sort
 ###281. Zigzag Iterator
 ###282. Expression Add Operators
-###283. Move Zeroes
+###283. Move Zeroes :ok_hand:
+> * O(n) with a counter
+
 ###284. Peeking Iterator
 ###285. Inorder Successor in BST
 ###286. Walls and Gates
-###287. Find the Duplicate Number
+###287. Find the Duplicate Number  :ok_hand:
+> * two pointers, slow and fast, similiar to cycle in linkedlist
+
 ###288. Unique Word Abbreviation
 ###289. Game of Life
 ###290. Word Pattern
@@ -484,7 +598,9 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###292. Nim Game
 ###293. Flip Game
 ###294. Flip Game II
-###295. Find Median from Data Stream
+###295. Find Median from Data Stream :ok_hand:
+> * maintain two heaps(priority queues), small and large.
+
 ###296. Best Meeting Point
 ###297. Serialize and Deserialize Binary Tree
 ###298. Binary Tree Longest Consecutive Sequence

@@ -1,18 +1,18 @@
 
 public class P169_MajorityElement{
-	public int majorityElement(int[] num) {
-        Stack<Integer> stack = new Stack<Integer>();
-        for(int i=0;i<num.length;i++){
-            if(stack.empty()){
-                stack.push(num[i]);
+    public int majorityElement(int[] nums) {
+        int current = 0;
+        int count = 0;
+        for(int num : nums){
+            if(count == 0){
+                current = num;
+                count++;
+            }else if(current==num){
+                count++;
             }else{
-                if(stack.peek().equals(num[i])){
-                    stack.push(num[i]);
-                }else{
-                    stack.pop();
-                }
+                count--;
             }
         }
-        return stack.peek();
+        return current;
     }
 }

@@ -11,7 +11,7 @@ public class P003_LongestSubstringWithoutRepeatingCharacters{
             char c = s.charAt(tail);
             // record the index and char, retrieve previous one.
             Integer previousIndex = visited.put(c,tail);
-            if(previousIndex!=null&&previousIndex>=head){
+            if(previousIndex!=null&&previousIndex>head){
                 // if this char has been seen between head and tail, move head
                 head = previousIndex;
             }else{

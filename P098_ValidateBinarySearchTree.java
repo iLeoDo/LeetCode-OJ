@@ -1,5 +1,5 @@
 
-public class P098_ValidateBSSearchTree{
+public class P098_ValidateBinarySearchTree{
 
     /**
      * Iteratively
