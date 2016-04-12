@@ -1,3 +1,14 @@
+/*
+    https://leetcode.com/problems/multiply-strings/
+
+    Given two numbers represented as strings, return multiplication of the 
+    numbers as a string.
+
+    Note: The numbers can be arbitrarily large and are non-negative.
+
+    @tags: Math, String
+*/
+
 public class P43_MultiplyStrings {
     public String multiply(String num1, String num2) {
         if(num1.length()==0){ return num2; }

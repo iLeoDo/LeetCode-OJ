@@ -1,3 +1,10 @@
+/*
+    https://leetcode.com/problems/powx-n/
+
+    Implement pow(x, n).
+
+    @tags: Math, Binary Search
+*/
 
 public class P050_Pow{
     /**

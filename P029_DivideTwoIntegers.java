@@ -1,3 +1,12 @@
+/*
+    https://leetcode.com/problems/divide-two-integers/
+
+    Divide two integers without using multiplication, division and mod operator.
+
+    If it is overflow, return MAX_INT.
+
+    @tags: Math, Binary Search
+*/
 
 public class P029_DivideTwoIntegers{
 	public int divide(int dividend, int divisor) {

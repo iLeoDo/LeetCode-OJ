@@ -191,7 +191,7 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###69.	Sqrt(x) :ok_hand:
 >	* Apply the thinking of binary search
 
-###70.	Climbing Stairs
+###70.	Climbing Stairs :ok_hand:
 ###71.	Simplify Path
 ###72.	Edit Distance
 ###73.	Set Matrix Zeroes
@@ -312,8 +312,8 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 > * queue is useless because of the `next` pointer
 
 ###117. Populating Next Right Pointers in Each Node II
-###118. Pascal's Triangle
-###119. Pascal's Triangle II
+###118. Pascal's Triangle :ok_hand:
+###119. Pascal's Triangle II :ok_hand:
 ###120. Triangle
 ###121. Best Time to Buy and Sell Stock :ok_hand:
 > * Maximum subarray problem
