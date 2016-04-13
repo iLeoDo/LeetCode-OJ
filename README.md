@@ -28,7 +28,7 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 > * extendly check the palindromic substring with a middle point 0..length
 > * odd or even.
 
-###6.	ZigZag Conversion	`Finish`
+###6.	ZigZag Conversion :ok_hand:
 >	* list several example (e.g. `nRows = 3,4`), obverse the regulation of the index increament
 >	* build the substring for each row.
 >	* notice the edge case when `nRows=1`
@@ -89,18 +89,18 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 > * O(n)
 
 ###28.	Implement strStr()
-###29.	Divide Two Integers `finish`
+###29.	Divide Two Integers :ok_hand:
 >	* `>>1` => `/2`
 >	* `<<1` => `*2`
 
 ###30.	Substring with Concatenation of All Words
 ###31.	Next Permutation
 ###32.	Longest Valid Parentheses
-###33.	Search in Rotated Sorted Array `finish`
+###33.	Search in Rotated Sorted Array :ok_hand:
 >	* Based on binary search
 >	* each time, detect which side is sorted (there is at least one part is sorted)
 
-###34.	Search for a Range	`finish`
+###34.	Search for a Range	:ok_hand:
 >	* a helper method that use binary search to find first element which greater or equal to target
 >	* use `target` and `target+1` to get the two bounds
 
@@ -120,7 +120,7 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 
 ###41.	First Missing Positive
 ###42.	Trapping Rain Water
-###43.	Multiply Strings	`finish`
+###43.	Multiply Strings :ok_hand:
 >	* calculate the result by digits
 >	* outter loop track the digits and track the carry
 >	* inner loop calculate the sum for one digits
@@ -181,7 +181,7 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 > * special case: first row and first column
 
 ###65.	Valid Number
-###66.	Plus One `finish`
+###66.	Plus One :ok_hand:
 >	*   start from the rightest digit, if `digits[i]==9` change it to 0, when finding one element is not 9, return.
 
 ###67.	Add Binary `finish`
@@ -192,14 +192,17 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 >	* Apply the thinking of binary search
 
 ###70.	Climbing Stairs :ok_hand:
+
 ###71.	Simplify Path
 ###72.	Edit Distance
-###73.	Set Matrix Zeroes
-###74.	Search a 2D Matrix
+###73.	Set Matrix Zeroes :ok_hand:
+
+###74.	Search a 2D Matrix :ok_hand:
+
 ###75.	Sort Colors
 ###76.	Minimum Window Substring
 ###77.	Combinations
-###78.	Subsets	`finish`
+###78.	Subsets	:ok_hand:
 > * use several bits of a integer as the indicators, who indicates whether S[i] included int the subset
 > * 2^n = 1<<n
 
@@ -211,7 +214,9 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 > * count the time of duplicates
 > * reset the counter when meet a new element
 
-###81.	Search in Rotated Sorted Array II
+###81.	Search in Rotated Sorted Array II :ok_hand:
+> * similar to #033
+
 ###82.	Remove Duplicates from Sorted List II :ok_hand:
 > * dummyHead
 > * move current until its not a duplicate element.
@@ -279,11 +284,11 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 >	* BFS
 >	* LinkedList addFirst();
 
-###108. Convert Sorted Array to Binary Search Tree `finish`
+###108. Convert Sorted Array to Binary Search Tree :ok_hand:
 >	* recursive
 >	* careful with the situation array is null or has only one element.
 
-###109. Convert Sorted List to Binary Search Tree `finish`
+###109. Convert Sorted List to Binary Search Tree :ok_hand:
 >	* count the length of linked list firstly
 >	* do not access the list randomly
 >	* so use inorder traverse.
@@ -311,7 +316,8 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 > * traversal level by level
 > * queue is useless because of the `next` pointer
 
-###117. Populating Next Right Pointers in Each Node II
+###117. Populating Next Right Pointers in Each Node II :ok_hand:
+
 ###118. Pascal's Triangle :ok_hand:
 ###119. Pascal's Triangle II :ok_hand:
 ###120. Triangle
@@ -345,8 +351,10 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###133. Clone Graph
 ###134. Gas Station
 ###135. Candy
-###136. Single Number
+###136. Single Number :ok_hand:
+
 ###137. Single Number II
+
 ###138. Copy List with Random Pointer :ok_hand:
 > * step 1. insert copy after each original
 > * step 2. assign random
@@ -378,7 +386,7 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###144. Binary Tree Preorder Traversal :ok_hand:
 > * make use of stack and queue when traverse the tree
 
-###145. Binary Tree Postorder Traversal `finish`
+###145. Binary Tree Postorder Traversal :ok_hand:
 > * track the number of access of each nodes
 > * when 2nd time, push right node into stack
 > * when 3rd time, add current Node to list.
@@ -415,7 +423,7 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 >	* if two linked lists have intersection, they will have same end
 
 ###161. One Edit Distance
-###162. Find Peak Element
+###162. Find Peak Element :ok_hand:
 >	* Use binary search tree thinking
 >	* Compare num[mid] and num[mid+1], the peak must be on left or right half side.
 >	* note that the peak might be 1st or last one element due to that
@@ -441,7 +449,7 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 >	* Application of Inorder traverse of a tree in iterative.
 
 ###174. Dungeon Game
-###179. Largest Number	`finish`
+###179. Largest Number :ok_hand:
 >	* self-define Comparator
 >	* two different comparators are given in code
 
@@ -463,8 +471,11 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 
 ###190. Reverse Bits
 ###191. Number of 1 Bits
-###198. House Robber
-###199. Binary Tree Right Side View
+
+###198. House Robber :ok_hand:
+
+###199. Binary Tree Right Side View :ok_hand:
+
 ###200. Number of Islands
 ###201. Bitwise AND of Numbers Range
 ###202. Happy Number
@@ -520,7 +531,8 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###230. Kth Smallest Element in a BST :ok_hand:
 > * Inorder traversal
 
-###231. Power of Two
+###231. Power of Two :ok_hand:
+
 ###232. Implement Queue using Stacks
 ###233. Number of Digit One
 ###234. Palindrome Linked List  :ok_hand:
@@ -536,7 +548,8 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 
 ###238. Product of Array Except Self
 ###239. Sliding Window Maximum
-###240. Search a 2D Matrix II
+###240. Search a 2D Matrix II :ok_hand:
+
 ###241. Different Ways to Add Parentheses
 ###242. Valid Anagram
 ###243. Shortest Word Distance
@@ -556,7 +569,7 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###257. Binary Tree Paths
 ###258. Add Digits
 ###259. 3Sum Smaller
-###260. Single Number III
+###260. Single Number III :ok_hand:
 ###261. Graph Valid Tree
 ###263. Ugly Number
 ###264. Ugly Number II
@@ -573,7 +586,7 @@ All Questions are from [oj.leetcode.com](oj.leetcode.com)
 ###271. Encode and Decode Strings
 ###272. Closest Binary Search Tree Value II
 ###273. Integer to English Words
-###274. H-Index
+###274. H-Index :ok_hand:
 ###275. H-Index II
 ###276. Paint Fence
 ###277. Find the Celebrity

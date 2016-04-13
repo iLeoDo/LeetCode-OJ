@@ -1,3 +1,16 @@
+/*
+    https://leetcode.com/problems/min-stack/
+
+    Design a stack that supports push, pop, top, and retrieving the minimum 
+    element in constant time.
+
+    push(x) -- Push element x onto stack.
+    pop() -- Removes the element on top of the stack.
+    top() -- Get the top element.
+    getMin() -- Retrieve the minimum element in the stack.
+
+    @tags: Stack, Design
+*/
 
 public class P155_MinStack{
 	Stack<Integer> stack = new Stack<Integer>();

@@ -24,26 +24,22 @@
 */
 
 public class P078_Subsets{
-	public List<List<Integer>> subsets(int[] S) {
+    public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> result = new LinkedList<List<Integer>>();
-        if(S==null){
+        if(nums==null){
             return null;
         }
-        
-        Arrays.sort(S);
-        
-        int size = S.length;
-        for(int i = 0;i<(1<<size);i++){
+        Arrays.sort(nums);
+        for(int i = 0;i<(1<<nums.length);i++){
             List<Integer> subset = new LinkedList<Integer>();
-            for(int j=0;j<size;j++){
-                int have = (i&(1<<j));
-                if(have !=0){
-                    subset.add(S[j]);
+            for(int j = 0; j<nums.length;j++){
+                boolean have = (i&(1<<j))>0;
+                if(have){
+                    subset.add(nums[j]);
                 }
             }
-            result.add(subset);    
+            result.add(subset);
         }
-        
         return result;
     }
 }

@@ -12,25 +12,43 @@
 */
 
 public class P081_SearchInRotatedSortedArrayII{
-	public boolean search(int[] A, int target) {
-		int lo =0, hi = A.length-1;
-		int mid = 0;
-		while(lo<hi){
-			mid=(lo+hi)/2;
-			if(A[mid]==target)
-				return true;
-			if(A[mid]>A[hi]){
-				if(A[mid]>target && A[lo] <= target)
-					hi = mid;
-				else lo = mid + 1;
-			}else if(A[mid] < A[hi]){
-				if(A[mid]<target && A[hi] >= target) 
-					lo = mid + 1;
-				else hi = mid;
-		    }else{
-			    hi--;
-			}
-		}
-		return A[lo] == target ? true : false;
-	}
+	public boolean search(int[] nums, int target) {
+        int low =0, high = nums.length-1;
+
+		while(low<=high){
+            int mid = (low+high)/2;
+            int lowVal = nums[low];
+            int highVal = nums[high];
+            int midVal = nums[mid];
+            if(midVal==target){
+                return true;
+            }
+
+
+            // left part is sorted
+            if(highVal<midVal){
+                if(midVal>target&&lowVal<=target){
+                    high = mid-1;
+                }else{
+                    low = mid+1;
+                }
+            }
+
+            // right part is sorted
+            else if(midVal<highVal){
+                if(midVal<target&&highVal>=target){
+                    low = mid+1;
+                }else{
+                    high = mid-1;
+
+                }
+            }
+            // midVal == highVal
+            else{
+                high--;
+            }
+
+        }
+        return false;
+    }
 }

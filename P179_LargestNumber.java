@@ -1,47 +1,38 @@
+/*
+    https://leetcode.com/problems/largest-number/
+
+    Given a list of non negative integers, arrange them such that they form the
+    largest number.
+
+    For example, given [3, 30, 34, 5, 9], the largest formed number is 9534330.
+
+    Note: The result may be very large, so you need to return a string instead
+    of an integer.
+
+    @tags: Sort
+*/
 
 public class P179_LargestNumber{
-	public String largestNumber(int[] num) {
-        ArrayList<String> al = new ArrayList<String>();
-        for(int i = 0;i<num.length;i++){
-            al.add(String.valueOf(num[i]));
+	public String largestNumber(int[] nums) {
+        String[] eles = new String[nums.length];
+        for(int i=0;i<nums.length;i++){
+            eles[i] = String.valueOf(nums[i]);
         }
-        al.sort(new Comparator<String>(){
+        Arrays.sort(eles,new Comparator<String>(){
+            @Override
             public int compare(String a, String b){
-                /** Comparator 1 
-                int i=0;
-                while(i<(a.length()+b.length())){
-                    int ia = a.length()==1?0:i%(a.length());
-                    int ib = b.length()==1?0:i%(b.length());
-                    
-                    if(a.charAt(ia)<b.charAt(ib)){//int a < int b
-                        return -1;
-                    }else if(a.charAt(ia)>b.charAt(ib)){
-                        return 1;
-                    }
-                    i++;
-                }
-                if(a.length()==b.length()){
-                    return 0;
-                }
-                return a.length()>b.length()?1:-1;
-                **/
-                /** Comparator 2 **/
-                String ab = a+b;
-                String ba = b+a;
-                return ab.compareTo(ba);
+                return (a+b).compareTo(b+a);
             }
         });
-        
         StringBuilder sb = new StringBuilder();
-        boolean flag = true;
-        for(int i = num.length-1;i>=0;i--){
-            if(flag&&al.get(i).equals("0")){
+        boolean leadingZero = true;
+        for(int i=eles.length-1;i>=0;i--){
+            if(leadingZero&&eles[i].equals("0")){
                 return "0";
             }else{
-                sb.append(al.get(i));
-                flag = false;
+                sb.append(eles[i]);
+                leadingZero = false;
             }
-            
         }
         return sb.toString();
     }

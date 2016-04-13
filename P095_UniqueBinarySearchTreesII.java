@@ -1,7 +1,7 @@
 /*
     https://leetcode.com/problems/unique-binary-search-trees-ii/
 
-    Given n, generate all structurally unique BST's (binary search trees) that 
+    Given n, generate all structurally unique BST's (binary search trees) that
     store values 1...n.
 
     For example,
